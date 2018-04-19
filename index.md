@@ -3,9 +3,13 @@ layout: default
 ---
 # Microservices và hành trình với Kubernetes.
 
+Nó sẽ không phải là **Microservices** nếu chỉ có 1 Service. Vậy làm sao để các Service có thể giao tiếp với nhau, làm sao để biết 1 Service đã bị chết, ...?
+
+Đó là lý do ta cần [**Kubernetes**](https://kubernetes.io/) khi triển khai Microservices. Kubernetes hoạt động dựa trên sự phối hợp giữa các Docker containers, hỗ trợ phần lớn trong việc triển khai các Service và mở rộng hệ thống.
+
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
-[Link to another page](./another-page.html).
+[Link to another page](https://kubernetes.io/).
 
 There should be whitespace between paragraphs.
 
