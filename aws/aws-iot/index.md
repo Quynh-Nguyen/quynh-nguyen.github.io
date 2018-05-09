@@ -16,7 +16,7 @@ Bài viết này sẽ bỏ qua các phần lý thuyết và định nghĩa dài 
 
 ## Giải pháp:
 
-![AWS IoT Example](https://github.com/Quynh-Nguyen/quynh-nguyen.github.io/blob/master/aws/aws-iot/AWS%20IoT.png)
+![AWS IoT Example](https://quynh-nguyen.github.io/aws/aws-iot/AWS%20IoT.png)
 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
