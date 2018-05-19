@@ -18,6 +18,42 @@ Bài viết này sẽ bỏ qua các phần lý thuyết và định nghĩa dài 
 
 ![AWS IoT Example](https://quynh-nguyen.github.io/aws/aws-iot/AWS%20IoT.png)
 
+## Xây dựng:
+
+### Camera Node:
+
+Camera Node cần 2 chức năng chính:
+1.  Speech Recognition - Nhận diện giọng nói
+2.  Capture Picture - Chụp hình
+
+#### Speech Recognition:
+
+```js
+import speech_recognition as sr
+
+# Record Audio
+r = sr.Recognizer()
+
+def main():
+    audio = r.listen(source)
+    # Speech recognition using Google Speech Recognition
+    try:
+        voiceRecognition = r.recognize_google(audio, language='vi-VN')
+        print("You said: " + voiceRecognition)
+        if "Xin chào" in voiceRecognition:
+            print("Capture Picture")
+    except sr.UnknownValueError:
+        print("Google Speech Recognition could not understand audio")
+    except sr.RequestError as e:
+        print("Could not request results from Google Speech Recognition service; {0}".format(e))
+
+
+with sr.Microphone() as source:
+    print("Say something!")
+    while True:
+        main()
+```
+
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
 [Link to another page](https://kubernetes.io/).
