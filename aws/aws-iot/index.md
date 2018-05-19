@@ -5,31 +5,30 @@ layout: default
 
 Bài viết này sẽ bỏ qua các phần lý thuyết và định nghĩa dài dòng, thay vào đó chúng ta đặt ra một bài toán, và đi giải nó - bằng [**Amazon Web Services IoT (Internet of Things)**](https://aws.amazon.com/iot/).
 
-## Demo:
+## 1. Demo:
 
-## Đặt vấn đề:
+## 2. Đặt vấn đề:
 
 > Một trường học muốn triển khai hệ thống liên kết với các bậc phụ huynh học sinh thông qua thiết bị camera, với các chức năng cụ thể:
 > *   Mỗi buổi sáng khi học sinh đến trường sẽ nhìn vào Camera và nói: `Hi, I'm {Name}!`
 > *   Camera sẽ nhận diện học sinh, chụp một tấm hình
 > *   Tấm hình chụp sẽ được gửi cho Ban giám hiệu và phụ huynh học sinh (phụ huynh của học sinh nào thì sẽ nhận được hình của học sinh đó)
 
-## Giải pháp:
+## 3. Giải pháp:
 
 ![AWS IoT Example](https://quynh-nguyen.github.io/aws/aws-iot/AWS%20IoT.png)
 
-## Xây dựng:
+## 4. Xây dựng:
 
-### Camera Node:
+### 4.1. Camera Node:
 
 Camera Node cần 2 chức năng chính:
 1.  Speech Recognition - Nhận diện giọng nói
 2.  Capture Picture - Chụp hình
 
-#### Speech Recognition:
+#### 4.1.1 Speech Recognition:
 
-```js
-import speech_recognition as sr
+```import speech_recognition as sr
 
 # Record Audio
 r = sr.Recognizer()
@@ -53,6 +52,10 @@ with sr.Microphone() as source:
     while True:
         main()
 ```
+
+Để tăng thêm phần chuyên nghiệp cho Speech Recognition các bạn có thể thêm Wake-up keywork bằng `Pocketsphinx` package. [Tham khảo](https://stackoverflow.com/questions/25394329/python-voice-recognition-library-always-listen/25472887)
+
+#### 4.1.2 Capture Picture:
 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
