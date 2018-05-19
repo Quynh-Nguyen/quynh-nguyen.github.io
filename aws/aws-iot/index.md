@@ -28,7 +28,8 @@ Camera Node cần 2 chức năng chính:
 
 #### 4.1.1 Speech Recognition:
 
-```import speech_recognition as sr
+```python
+import speech_recognition as sr
 
 # Record Audio
 r = sr.Recognizer()
