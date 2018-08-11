@@ -42,7 +42,7 @@ sudo service jenkins start
 
 Truy cập [http://localhost:8080/](http://localhost:8080/) bằng Webbrowser để kiểm tra Jenkins WebService đã hoạt động chưa.
 
-![CI/CD Workflow](https://quynh-nguyen.github.io/devops/jenkins/JenkinsHome.png =250x)
+![CI/CD Workflow](https://quynh-nguyen.github.io/devops/jenkins/JenkinsHome.png | width=200)
 
 #### 4.1.2 Capture Picture:
 
