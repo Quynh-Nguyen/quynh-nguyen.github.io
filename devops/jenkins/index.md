@@ -14,7 +14,7 @@ Bài viết này sẽ bỏ qua các phần lý thuyết và định nghĩa dài 
 
 ## 3. Giải pháp:
 
-![CI/CD Workflow](https://quynh-nguyen.github.io/devops/Jenkins/Jenkins%20Workflow.png)
+![CI/CD Workflow](https://quynh-nguyen.github.io/devops/jenkins/Jenkins%20Workflow.png)
 
 ## 4. Xây dựng:
 
