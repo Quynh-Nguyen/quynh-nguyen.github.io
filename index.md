@@ -12,6 +12,7 @@ layout: default
   - [IoT](https://quynh-nguyen.github.io/aws/aws-iot/)
 - DevOps
   - [Kubernetes](https://quynh-nguyen.github.io/devops/kubernetes/)
+  - [Jenkins (CI/CD)](https://quynh-nguyen.github.io/devops/jenkins/)
   
 ```
 Quỳnh Nguyễn
