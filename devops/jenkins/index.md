@@ -18,41 +18,31 @@ Bài viết này sẽ bỏ qua các phần lý thuyết và định nghĩa dài 
 
 ## 4. Xây dựng:
 
-### 4.1. Camera Node:
+### 4.1. Cài đặt Jenkins:
 
-Camera Node cần 2 chức năng chính:
-1.  Speech Recognition - Nhận diện giọng nói
-2.  Capture Picture - Chụp hình
+Chúng ta sẽ cài đặt Jenkins Core và một số Plugins cũng như Dependencies cho Jenkins.
 
-#### 4.1.1 Speech Recognition:
-
-```python
-import speech_recognition as sr
-
-# Record Audio
-r = sr.Recognizer()
-
-def main():
-    audio = r.listen(source)
-    # Speech recognition using Google Speech Recognition
-    try:
-        voiceRecognition = r.recognize_google(audio, language='vi-VN')
-        print("You said: " + voiceRecognition)
-        if "Xin chào" in voiceRecognition:
-            print("Capture Picture")
-    except sr.UnknownValueError:
-        print("Google Speech Recognition could not understand audio")
-    except sr.RequestError as e:
-        print("Could not request results from Google Speech Recognition service; {0}".format(e))
-
-
-with sr.Microphone() as source:
-    print("Say something!")
-    while True:
-        main()
+```shell
+$ wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+$ sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+$ sudo apt-get update
+$ sudo apt-get install -y jenkins ant git-core curl unzip
+##Please notice shutdown all others service running with port 8080
+##Check by this command:
+$ sudo netstat -anp | grep 8080
 ```
 
-Để tăng thêm phần chuyên nghiệp cho Speech Recognition các bạn có thể thêm Wake-up keywork bằng `Pocketsphinx` package. [Tham khảo](https://stackoverflow.com/questions/25394329/python-voice-recognition-library-always-listen/25472887)
+Khi thấy kết quả: _jenkins is already the newest version (x.x.x)_. Có nghĩa là bạn đã cài đặt thành công.
+
+### 4.2. Start Jenkins Service:
+
+```skell
+sudo service jenkins start
+```
+
+Truy cập [http://localhost:8080/](http://localhost:8080/) bằng Webbrowser để kiểm tra Jenkins WebService đã hoạt động chưa.
+
+![CI/CD Workflow](https://quynh-nguyen.github.io/devops/jenkins/JenkinsHome.png)
 
 #### 4.1.2 Capture Picture:
 
