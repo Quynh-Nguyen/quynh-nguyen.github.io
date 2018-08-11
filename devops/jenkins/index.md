@@ -23,13 +23,13 @@ Bài viết này sẽ bỏ qua các phần lý thuyết và định nghĩa dài 
 Chúng ta sẽ cài đặt Jenkins Core và một số Plugins cũng như Dependencies cho Jenkins.
 
 ```shell
-$ wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
-$ sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
-$ sudo apt-get update
-$ sudo apt-get install -y jenkins ant git-core curl unzip
+wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo apt-get update
+sudo apt-get install -y jenkins ant git-core curl unzip
 ##Please notice shutdown all others service running with port 8080
 ##Check by this command:
-$ sudo netstat -anp | grep 8080
+sudo netstat -anp | grep 8080
 ```
 
 Khi thấy kết quả: _jenkins is already the newest version (x.x.x)_. Có nghĩa là bạn đã cài đặt thành công.
