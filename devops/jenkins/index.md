@@ -66,6 +66,16 @@ Tạo Administrator user và truy cập vào Jenkins Dashboard.
 
 ### 4.2 Cài đặt bảo mật cho Jenkins:
 
+Để phân quyền và bảo vệ các `job` của Jenkins.
+Chúng ta sẽ cần cài đặt 1 Plugin: [Role-based Authorization Strategy](http://wiki.jenkins-ci.org/display/JENKINS/Role+Strategy+Plugin)
+
+1. Jenkins > Manage Jenkins > Manage Plugins > Choose tab Available > Search Role-based Authorization and install.
+2. Jenkins > Manage Jenkins > Configure Global Security >
+* Tạo global roles, ví dụ như admin, job creator, anonymous, etc., và thiết lập các quyền: Overall, Slave, Job, Run, View
+* Tạo project roles, allowing to set only Job and Run permissions on a project basis.
+* Tạo slave roles, allowing to set node-related permissions.
+* Assigning these roles to users.
+
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
 [Link to another page](https://kubernetes.io/).
