@@ -69,127 +69,147 @@ Tạo Administrator user và truy cập vào Jenkins Dashboard.
 Để phân quyền và bảo vệ các `job` của Jenkins.
 Chúng ta sẽ cần cài đặt 1 Plugin: [Role-based Authorization Strategy](http://wiki.jenkins-ci.org/display/JENKINS/Role+Strategy+Plugin)
 
-1. Jenkins > Manage Jenkins > Manage Plugins > Choose tab Available > Search Role-based Authorization and install.
+1. Jenkins > Manage Jenkins > Manage Plugins > Chọn tab Available > Tìm Role-based Authorization và cài đặt.
 2. Jenkins > Manage Jenkins > Configure Global Security >
+
 * Tạo global roles, ví dụ như admin, job creator, anonymous, etc., và thiết lập các quyền: Overall, Slave, Job, Run, View
 * Tạo project roles, allowing to set only Job and Run permissions on a project basis.
 * Tạo slave roles, allowing to set node-related permissions.
-* Assigning these roles to users.
+* Assign roles cho những User.
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
+3. Jenkins > Manage Jenkins > Manage Roles
 
-[Link to another page](https://kubernetes.io/).
+<img src="https://quynh-nguyen.github.io/devops/jenkins/JenkinsRoles.png" title="Jenkins Dashboard" width="500">
 
-There should be whitespace between paragraphs.
+4. Jenkins > Manage Jenkins > Assign Roles
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+<img src="https://quynh-nguyen.github.io/devops/jenkins/JenkinsAssignRole.png" title="Jenkins Dashboard" width="500">
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+5. Disable sign up users by Jenkins > Manage Jenkins > Configure Global Security 
 
-## Header 2
+<img src="https://quynh-nguyen.github.io/devops/jenkins/JenkinsConfigureAuthorization.png" title="Jenkins Dashboard" width="500">
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+### 4.3 Cài đặt một số plugins hỗ trợ cho Jenkins:
 
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
+```shell
+cd /tmp
+wget http://localhost:8080/jnlpJars/jenkins-cli.jar
+java -jar jenkins-cli.jar -s http://localhost:8080 install-plugin chatwork --username administrator --password test
+##Notice: administrator / test is username and password when create new users step.
+##Notice: chatwork mean Jenkins plugin name
+java -jar jenkins-cli.jar -s http://localhost:8080 safe-restart --username administrator --password test
 ```
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
+Một số plugins cần thiết:
+
+1. Bitbucket - https://wiki.jenkins-ci.org/display/JENKINS/BitBucket+Plugin
+2. Build Pipeline - https://wiki.jenkins-ci.org/display/JENKINS/Build+Pipeline+Plugin
+3. Chatwork - https://wiki.jenkins-ci.org/display/JENKINS/ChatWork+Plugin
+4. Role-based Authorization Strategy (cái này cài lúc set security rồi) - http://wiki.jenkins-ci.org/display/JENKINS/Role+Strategy+Plugin
+5. Checkstyle - http://wiki.jenkins-ci.org/display/JENKINS/Checkstyle+Plugin
+6. Clover PHP - http://wiki.jenkins-ci.org/display/JENKINS/Clover+PHP+Plugin
+7. Crap4J - http://wiki.jenkins-ci.org/display/JENKINS/Crap4J+Plugin
+8. DRY - http://wiki.jenkins-ci.org/display/JENKINS/DRY+Plugin
+9. HTML Publisher - http://wiki.jenkins-ci.org/display/JENKINS/HTML+Publisher+Plugin
+10. JDepend - http://wiki.jenkins-ci.org/display/JENKINS/JDepend+Plugin
+11. Plot - http://wiki.jenkins-ci.org/display/JENKINS/Plot+Plugin
+12. PMD - http://wiki.jenkins-ci.org/display/JENKINS/PMD+Plugin
+13. Violations - http://wiki.jenkins-ci.org/display/JENKINS/Violations
+14. Warnings - https://wiki.jenkins-ci.org/display/JENKINS/Warnings+Plugin
+15. xUnit - http://wiki.jenkins-ci.org/display/JENKINS/xUnit+Plugin
+
+### 4.4 Cài đặt Autobuild kết hợp với Bitbucket:
+
+1. Access to Bitbucket > Repository of project > Settings > Webhooks > Add webhook
+
+<img src="https://quynh-nguyen.github.io/devops/jenkins/BitbucketJenkinsPush.png" title="Jenkins Dashboard" width="500">
+
+2. Create new job/item
+
+<img src="https://quynh-nguyen.github.io/devops/jenkins/BitbucketJenkinsPush2.png" title="Jenkins Dashboard" width="500">
+
+### 4.5 Cài đặt Rocketeer để kết hợp với Jenkins:
+
+1. Install Rocketeer
+
+```shell
+wget http://rocketeer.autopergamene.eu/versions/rocketeer.phar
+chmod +x rocketeer.phar
+mv rocketeer.phar /usr/local/bin/rocketeer
+//TODO Install PHP for Jenkins server
+sudo apt-get install php
+//TODO Check rocketeer
+rocketeer check
+No connections have been set, please create one: (production) <~ Succeed
 ```
 
-#### Header 4
+2. Setup remote server information
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
+```shell
+$ cd /var/lib/jenkins/drone-deploy/drone-deploy/drone-php
+$ rocketeer ignite
+No connections have been set, please create one: (production)develop
+No host is set for [develop], please provide one:35.166.67.136
+No username is set for [develop], please provide one:ec2-user
+No password or SSH key is set for [develop], which would you use? (key) [key/password]key
+Please enter the full path to your key (/var/lib/jenkins/.ssh/id_rs/var/lib/jenkins/.ssh/drone_project.pem
+If a keyphrase is required, provide it
+No repository is set for [repository], please provide one:git@bitbucket.org:nldanang/drone_php.git
+No username is set for [repository], please provide one:quynh.nn@neo-lab.vn
+No password is set for [repository], please provide one:
+develop/0 | Ignite (Creates Rocketeer's configuration)
+What is your application's name ? (drone-php)drone_deploy
+The Rocketeer configuration was created at drone-php/.rocketeer
 ```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+
+3. Configure
+
+```shell
+$ cd /var/lib/jenkins/drone-deploy/drone-deploy/drone-php
+$ nano .rocketeer/config.php
+Replace connections name production --> develop //It's Rocketeer bug
+$ nano .rocketeer/remote.php
+'root_directory' => '/var/www/html/',
+'shared'         => [
+        'storage/logs',
+        'storage/framework/sessions',
+        '.env',
+    ],
+'permissions'    => [
+ 
+        // The folders and files to set as web writable
+        'files'    => [
+            //'app/database/production.sqlite',
+            'bootstrap',
+            'storage',
+            'public',
+        ],
+ 
+        // Here you can configure what actions will be executed to set
+        // permissions on the folder above. The Closure can return
+        // a single command as a string or an array of commands
+        'callback' => function ($task, $file) {
+            return [
+                sprintf('chmod -R 777 %s', $file),
+                sprintf('chmod -R g+s %s', $file),
+                sprintf('chown -R ec2-user:ec2-user %s', $file),
+            ];
+        },
+ 
+    ],
+$ nano .rocketeer/strategies.php
+    //'test'         => 'Phpunit',
+    'test'         => '',
+    //return $composer->install([], ['--no-interaction' => null, '--no-dev' => null, '--prefer-dist' => null]);
+    return $composer->install([]);
+```
+
+4. Nào cùng kiểm tra xem Rocketeer trên Jenkins Server của chúng ta đã chạy ngon chưa
+```shell
+rocketeer deploy --on="develop" --tests
 ```
 
 ```
-The final element.
+Quỳnh Nguyễn
+Email: likeguitarz@gmail.com
 ```
