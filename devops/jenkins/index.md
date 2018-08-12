@@ -42,7 +42,7 @@ sudo service jenkins start
 
 Truy cập [http://localhost:8080/](http://localhost:8080/) bằng Webbrowser để kiểm tra Jenkins WebService đã hoạt động chưa.
 
-<img src="https://quynh-nguyen.github.io/devops/jenkins/JenkinsHome.png" title="CI/CD Workflow" width="200">
+<img src="https://quynh-nguyen.github.io/devops/jenkins/JenkinsHome.png" title="CI/CD Workflow" width="300">
 
 Lấy password generated bởi quá trình cài đặt Jenkins Service:
 
@@ -58,11 +58,11 @@ sudo su jenkins
 
 Chọn một số Jenkins plugin cơ bản mà bạn muốn sử dụng. Anh em cũng có thể bỏ qua bước này, vì có thể cài thêm plugins bất cứ lúc nào.
 
-<img src="https://quynh-nguyen.github.io/devops/jenkins/JenkinsPlugins.png" title="Jenkins Plugins" width="200">
+<img src="https://quynh-nguyen.github.io/devops/jenkins/JenkinsPlugins.png" title="Jenkins Plugins" width="300">
 
 Tạo Administrator user và truy cập vào Jenkins Dashboard.
 
-<img src="https://quynh-nguyen.github.io/devops/jenkins/JenkinsDashboard.png" title="Jenkins Dashboard" width="200">
+<img src="https://quynh-nguyen.github.io/devops/jenkins/JenkinsDashboard.png" title="Jenkins Dashboard" width="300">
 
 ### 4.2 Cài đặt bảo mật cho Jenkins:
 
