@@ -62,8 +62,7 @@ Chọn một số Jenkins plugin cơ bản mà bạn muốn sử dụng. Anh em 
 
 Tạo Administrator user và truy cập vào Jenkins Dashboard.
 
-<img src="https://quynh-nguyen.github.io/devops/jenkins/JenkinsDashboard.png
-" title="Jenkins Dashboard" width="200">
+<img src="https://quynh-nguyen.github.io/devops/jenkins/JenkinsDashboard.png" title="Jenkins Dashboard" width="200">
 
 ### 4.2 Cài đặt bảo mật cho Jenkins:
 
