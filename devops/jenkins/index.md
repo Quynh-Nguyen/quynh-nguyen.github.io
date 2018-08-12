@@ -36,15 +36,36 @@ Khi thấy kết quả: _jenkins is already the newest version (x.x.x)_. Có ngh
 
 ### 4.2. Start Jenkins Service:
 
-```skell
+```shell
 sudo service jenkins start
 ```
 
 Truy cập [http://localhost:8080/](http://localhost:8080/) bằng Webbrowser để kiểm tra Jenkins WebService đã hoạt động chưa.
 
-![CI/CD Workflow](https://quynh-nguyen.github.io/devops/jenkins/JenkinsHome.png | width=200)
+<img src="https://quynh-nguyen.github.io/devops/jenkins/JenkinsHome.png" title="CI/CD Workflow" width="200">
 
-#### 4.1.2 Capture Picture:
+Lấy password generated bởi quá trình cài đặt Jenkins Service:
+
+```shell
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+```
+
+Switch command user sang `jenkins`. Từ thời điểm này chúng ta sẽ phải chạy toàn bộ _command line_ bằng user này.
+
+```shell
+sudo su jenkins
+```
+
+Chọn một số Jenkins plugin cơ bản mà bạn muốn sử dụng. Anh em cũng có thể bỏ qua bước này, vì có thể cài thêm plugins bất cứ lúc nào.
+
+<img src="https://quynh-nguyen.github.io/devops/jenkins/JenkinsPlugins.png" title="Jenkins Plugins" width="200">
+
+Tạo Administrator user và truy cập vào Jenkins Dashboard.
+
+<img src="https://quynh-nguyen.github.io/devops/jenkins/JenkinsDashboard.png
+" title="Jenkins Dashboard" width="200">
+
+### 4.2 Cài đặt bảo mật cho Jenkins:
 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
