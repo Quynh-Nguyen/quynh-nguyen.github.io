@@ -51,3 +51,5 @@ Weather... to sync them with the Car Navigation app.
 - Find nearest services easier
 
 ## 3. Workflow
+![Workflow](https://quynh-nguyen.github.io/presentations/maps-car-navigation/Maps%20Car%20Navigation_MVP_Phase.png)
+
