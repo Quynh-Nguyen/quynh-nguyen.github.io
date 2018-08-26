@@ -53,3 +53,13 @@ Weather... to sync them with the Car Navigation app.
 ## 3. Workflow
 ![Workflow](https://quynh-nguyen.github.io/presentations/maps-car-navigation/Maps%20Car%20Navigation_MVP_Phase.png)
 
+## 4. ERD
+![Workflow](https://quynh-nguyen.github.io/presentations/maps-car-navigation/Maps%20Car%20Navigation_ERD.png)
+
+## 5. Apply CI/CD
+[Jenkins (CI/CD)](https://quynh-nguyen.github.io/devops/jenkins/)
+
+## 6. Extended functions
+- Live View on Website and another devices
+- Communicate in same Group/Organization/Family
+- Find services near by: Gas station/ATM/Restaurants by Voice recognition
