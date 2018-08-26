@@ -56,10 +56,18 @@ Weather... to sync them with the Car Navigation app.
 ## 4. ERD
 ![Workflow](https://quynh-nguyen.github.io/presentations/maps-car-navigation/Maps%20Car%20Navigation_ERD.png)
 
-## 5. Apply CI/CD
+## 5. Technology stacks
+- Android/iOS: React Native
+- Web: ReactJS
+- Amazon Web Services: IoT, Cognito, Lambda, CloudWatch Rules, SNS, EC2
+- Bing Maps REST Services
+- Bitbucket/Github
+- Jenkins: Ubuntu Jenkins for Web, MacOS Jenkins for Android and iOS App
+
+## 6. Apply CI/CD
 [Jenkins (CI/CD)](https://quynh-nguyen.github.io/devops/jenkins/)
 
-## 6. Extended functions
+## 7. Extended functions
 - Live View on Website and another devices
 - Communicate in same Group/Organization/Family
 - Find services near by: Gas station/ATM/Restaurants by Voice recognition
