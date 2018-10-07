@@ -16,10 +16,12 @@ author:
   url:            https://github.com/Quynh-Nguyen
 
 paginate:         5
+paginate_path:    "/page/:num"
 
 # Custom vars
 version:          2.1.0
-plugins:          [jekyll-paginate]
+plugins:
+   - jekyll-paginate
 
 github:
   repo:           https://github.com/Quynh-Nguyen/quynh-nguyen.github.io
