@@ -31,8 +31,10 @@
  * Update the foundational and global aspects of the page.
  */
 
+@import url('https://fonts.googleapis.com/css?family=Play');
+
 html {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: 'Play', sans-serif;
 }
 @media (min-width: 48em) {
   html {
@@ -79,7 +81,7 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
+  font-family: 'Play', sans-serif;
   font-size: 3.25rem;
 }
 
