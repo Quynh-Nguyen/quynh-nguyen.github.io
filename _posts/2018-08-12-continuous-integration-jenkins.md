@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Continuous-Integration, Continuous-Deployment và hành trình với Jenkins.
 ---
 
