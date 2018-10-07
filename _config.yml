@@ -19,6 +19,7 @@ paginate:         5
 
 # Custom vars
 version:          2.1.0
+plugins:          [jekyll-paginate]
 
 github:
   repo:           https://github.com/Quynh-Nguyen/quynh-nguyen.github.io
