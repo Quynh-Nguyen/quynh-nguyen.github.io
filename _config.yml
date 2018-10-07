@@ -1,2 +1,2 @@
-remote_theme: "mmistakes/minimal-mistakes"
+theme: jekyll-theme-hacker
 comments: true
