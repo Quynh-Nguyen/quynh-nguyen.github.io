@@ -1,5 +1,6 @@
 ---
 title: Continuous-Integration, Continuous-Deployment và hành trình với Jenkins.
+date: 2018-08-12
 ---
 
 # Continuous-Integration, Continuous-Deployment và hành trình với Jenkins.
