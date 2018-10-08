@@ -2,7 +2,7 @@
 highlighter:      rouge
 
 # Permalinks
-# permalink:        pretty
+permalink:        pretty
 
 # Setup
 title:            whyn4
@@ -21,9 +21,11 @@ paginate_path:    "/page/:num"
 # Custom vars
 version:          1.1.0
 plugins:
-   - jekyll-paginate
+  - jekyll-paginate
+gems:
+  - jekyll-paginate
    
-markdown: kramdown
+markdown:         kramdown
 
 github:
   repo:           https://github.com/Quynh-Nguyen/quynh-nguyen.github.io
