@@ -2,7 +2,6 @@
 layout: post
 title: Microservices và hành trình với Kubernetes.
 ---
-# Microservices và hành trình với Kubernetes.
 
 Sẽ không phải là **Microservices** nếu chỉ có 1 Service. Vậy làm sao để các Service có thể giao tiếp với nhau, làm sao để biết 1 Service đã bị chết, ...?
 
