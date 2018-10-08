@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Continuous-Integration, Continuous-Deployment và hành trình với Jenkins.
 date: 2018-08-12
 ---
