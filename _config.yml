@@ -27,11 +27,3 @@ markdown: kramdown
 
 github:
   repo:           https://github.com/Quynh-Nguyen/quynh-nguyen.github.io
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      comments: true
