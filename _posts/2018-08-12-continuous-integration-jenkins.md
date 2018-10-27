@@ -13,6 +13,8 @@ Bài viết này sẽ bỏ qua các phần lý thuyết và định nghĩa dài 
 > Là một Scrum Master có thiên hướng về Technical hay là một Teachnical Lead. Một ngày nào đó bạn bắt đầu cảm thấy bản thân phải quản lý quá nhiều Server, team phát triển đông và source code liên tục được thêm vào hệ thống.
 >Bạn sẽ cần đến **Continuous-Integration, Continuous-Deployment**.
 
+<!--more-->
+
 ## 3. Giải pháp:
 
 ![CI/CD Workflow](https://quynh-nguyen.github.io/devops/jenkins/Jenkins%20Workflow.png)
