@@ -16,6 +16,8 @@ Bài viết này sẽ bỏ qua các phần lý thuyết và định nghĩa dài 
 > *   Camera sẽ nhận diện học sinh, chụp một tấm hình
 > *   Tấm hình chụp sẽ được gửi cho Ban giám hiệu và phụ huynh học sinh (phụ huynh của học sinh nào thì sẽ nhận được hình của học sinh đó)
 
+<!--more-->
+
 ## 3. Giải pháp:
 
 ![AWS IoT Example](https://quynh-nguyen.github.io/aws/aws-iot/AWS%20IoT.png)
