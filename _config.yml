@@ -28,3 +28,5 @@ markdown:         kramdown
 
 github:
   repo:           https://github.com/Quynh-Nguyen/quynh-nguyen.github.io
+
+excerpt_separator: <!--more-->
