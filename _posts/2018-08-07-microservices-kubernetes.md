@@ -7,6 +7,8 @@ Sẽ không phải là **Microservices** nếu chỉ có 1 Service. Vậy làm s
 
 Đó là lý do ta cần [**Kubernetes**](https://kubernetes.io/) khi triển khai Microservices. Kubernetes hoạt động dựa trên sự phối hợp giữa các Docker containers, hỗ trợ phần lớn trong việc triển khai các Service và mở rộng hệ thống.
 
+<!--more-->
+
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
 [Link to another page](https://kubernetes.io/).
