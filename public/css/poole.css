@@ -149,7 +149,8 @@ abbr[title] {
 
 /* Code */
 code,
-pre {
+
+{
   font-family: Menlo, Monaco, "Courier New", monospace;
 }
 code {
@@ -170,7 +171,8 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #f9f9f9;
+  background-color: #151515;
+  box-shadown: 0 10px 70px rgba(0,0,0,.55);
 }
 pre code {
   padding: 0;
