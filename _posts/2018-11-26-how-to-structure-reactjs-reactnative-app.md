@@ -9,8 +9,8 @@ Bài viết này mình viết trên [**Medium**](https://medium.com/@likeguitarz
 
 ![React và hành trình xây dựng cấu trúc source code cho một dự án ReactJS, React Native.](https://quynh-nguyen.github.io/public/AlphaAppNavigators.png)
 
-## 2. Đặt vấn đề:
-
 <!--more-->
+
+## 2. Đặt vấn đề:
 
 ## 3. Giải pháp:
