@@ -5,7 +5,7 @@ author: whyn4
 categories: [ IoT ]
 image: aws/aws-iot/AWS%20IoT.png
 featured: true
-hidden: true
+hidden: false
 ---
 
 Bài viết này sẽ bỏ qua các phần lý thuyết và định nghĩa dài dòng, thay vào đó chúng ta đặt ra một bài toán, và đi giải nó - bằng [**Amazon Web Services IoT (Internet of Things)**](https://aws.amazon.com/iot/).
