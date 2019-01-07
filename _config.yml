@@ -1,32 +1,47 @@
-# Dependencies
-highlighter:      rouge
+# Site
+name: "whyn4"
+description: "A Vietnamese Software Engineer who is really passionate and work in the Singapore, Japan is my wishes."
+meta_description: "whyn4 - Quynh Nguyen's Blog"
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+baseurl: /
+google_analytics: ''
+disqus: ''
+mailchimp-list: ''
 
-# Permalinks
-permalink:        pretty
+# Authors
+authors:
+  whyn4:
+    name: Quynh Nguyen
+    display_name: Quynh Nguyen
+    # gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: likeguitarz@gmail.com
+    web: https://quynh-nguyen.github.io
+    twitter: https://twitter.com/likeguitarz
+    description: "A Vietnamese Software Engineer who is really passionate and work in the Singapore, Japan is my wishes."
 
-# Setup
-title:            whyn4
-tagline:          'Quynh Nguyen'
-description:      'A Vietnamese Software Engineer who is really passionate and work in the Singapore, Japan is my wishes.'
-url:              https://quynh-nguyen.github.io
-baseurl:          /
-
-author:
-  name:           'Quynh Nguyen'
-  url:            https://github.com/Quynh-Nguyen
-
-paginate:         5
+# Pagination
+paginate: 6
+paginate_path: /page:num/
 
 # Custom vars
 version:          1.1.0
+
+# Plugins
 plugins:
   - jekyll-paginate
-gems:
-  - jekyll-paginate
-   
-markdown:         kramdown
+  - jekyll-archives
 
-github:
-  repo:           https://github.com/Quynh-Nguyen/quynh-nguyen.github.io
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
 
 excerpt_separator: <!--more-->

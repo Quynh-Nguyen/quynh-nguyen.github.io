@@ -1,6 +1,7 @@
 ---
 layout: page
 title: My pet projects
+comments: true
 ---
 
 <p class="message">
@@ -21,4 +22,3 @@ Some pet projects:
   * **SocketIO** - A boilerplate for SocketIO Server. [Link](https://github.com/Quynh-Nguyen/socketio-server)
 
 Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/Quynh-Nguyen/quynh-nguyen.github.io) or [send me an Email](likeguitarz@gmail.com).
-
