@@ -2,6 +2,11 @@
 layout: page
 title: Continuous-Integration, Continuous-Deployment và hành trình với Jenkins.
 date: 2018-08-12
+author: whyn4
+categories: [ CI/CD, Jenkins ]
+image: devops/jenkins/Jenkins%20Workflow.png
+featured: true
+hidden: false
 ---
 
 Bài viết này sẽ bỏ qua các phần lý thuyết và định nghĩa dài dòng, thay vào đó chúng ta đặt ra một bài toán, và đi giải nó - bằng **Jenkins** kết hợp cùng với Rocketeer hoặc Capistrano.
