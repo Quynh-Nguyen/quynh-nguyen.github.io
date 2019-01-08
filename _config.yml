@@ -3,7 +3,7 @@ name: "whyn4"
 description: "A Vietnamese Software Engineer who is really passionate and work in the Singapore, Japan is my wishes."
 meta_description: "whyn4 - Quynh Nguyen's Blog"
 logo: 'assets/images/logo.png'
-favicon: 'assets/images/logo.png'
+favicon: 'assets/images/favicon.ico'
 baseurl: /
 google_analytics: ''
 disqus: 'quynh-nguyen-github-io'
