@@ -1,6 +1,6 @@
 # Site
 name: "whyn4"
-description: "A Vietnamese Software Engineer who is really passionate and work in the Singapore, Japan is my wishes."
+description: "A Vietnamese Software and Hardware Engineer whoes work focus on IoT systems, Web applications, Architectures. And work in the Singapore, Japan is my wishes."
 meta_description: "whyn4 - Quynh Nguyen's Blog"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
@@ -18,7 +18,7 @@ authors:
     email: likeguitarz@gmail.com
     web: https://quynh-nguyen.github.io
     twitter: https://twitter.com/likeguitarz
-    description: "A Vietnamese Software Engineer who is really passionate and work in the Singapore, Japan is my wishes."
+    description: "A Vietnamese Software and Hardware Engineer whoes work focus on IoT systems, Web applications, Architectures. And work in the Singapore, Japan is my wishes."
 
 # Pagination
 paginate: 6
