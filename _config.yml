@@ -8,6 +8,8 @@ baseurl: /
 google_analytics: 'UA-131933074-1'
 disqus: 'quynh-nguyen-github-io'
 mailchimp-list: ''
+include: ["_pages"]
+permalink: /:title/
 
 # Authors
 authors:
