@@ -1,8 +1,9 @@
 ---
 layout: post
-title: wLog 2019/06/10
+title: wLog \#1 20190610
 author: whyn4
 categories: [ wlog, machine learning ]
+image: assets/images/posts/wlog.png
 comments: true
 ---
 
