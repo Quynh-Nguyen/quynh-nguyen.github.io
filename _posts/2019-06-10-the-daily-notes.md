@@ -31,6 +31,7 @@ Nên tôi bắt đầu mày mò nhiều hơn về mảng này:
 
 ## 2. Smart home:
 - BRC301B611 - Tôi đang tìm mua board controller này của Daikin để tiếp tục tự động hóa máy thu hồi nhiệt Daikin Heat reclaim ventilator.
--
+- Switchglass https://www.youtube.com/watch?v=WCzeuL7hNhk - Một loại kính dùng thay thế cho rèm, có thể chuyển từ trong suốt sang đục, được áp dụng trong phòng họp, phòng tắm, ...
 
 ## 3. Security:
+- Tôi vô tình đọc được một phương thức tấn công - keyword là: speculative execution exploitation. Nhưng tôi sẽ cố gắng học thêm sau.
