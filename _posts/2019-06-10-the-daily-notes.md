@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [wLog] 2019/06/10
+title: wLog 2019/06/10
 author: whyn4
 categories: [ wlog, machine learning ]
 comments: true
