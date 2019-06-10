@@ -35,3 +35,6 @@ Nên tôi bắt đầu mày mò nhiều hơn về mảng này:
 
 ## 3. Security:
 - Tôi vô tình đọc được một phương thức tấn công - keyword là: speculative execution exploitation. Nhưng tôi sẽ cố gắng học thêm sau.
+
+---
+2019/06/10 23:00
