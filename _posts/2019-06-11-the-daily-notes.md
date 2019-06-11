@@ -22,7 +22,7 @@ Hôm nay tôi tiếp tục làm remote controller cho máy thu hồi nhiệt Dai
     - Với các ESP8266 NodeMCU version mới thì chân 5V là chân VIN
     - Bạn có thể dùng đồng hồ đo trước khi làm
 - Sản phẩm của tôi:
-![Relay remote controller](assets/images/posts/esp8266-relay-controller.jpg)
+![Relay remote controller](/assets/images/posts/esp8266-relay-controller.jpg)
 
 
 ## 3. Livestream:
