@@ -18,7 +18,7 @@ Hôm nay tôi tiếp tục làm remote controller cho máy thu hồi nhiệt Dai
 <!--more-->
 
 - Chân 5V: Khi cấp nguồn cho ESP8266 thì trên board bạn sẽ có 1 số áp ra như 3.3V, 5V.
-    - Với các ESP8266 NodeMCU version 1 thì chân 5V là chân GU
+    - Với các ESP8266 NodeMCU version 1 thì chân 5V là chân VU
     - Với các ESP8266 NodeMCU version mới thì chân 5V là chân VIN
     - Bạn có thể dùng đồng hồ đo trước khi làm
 - Sản phẩm của tôi:
