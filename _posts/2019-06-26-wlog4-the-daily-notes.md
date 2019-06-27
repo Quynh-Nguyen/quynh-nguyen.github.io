@@ -7,10 +7,6 @@ image: assets/images/posts/wlog.png
 comments: true
 ---
 
-Dạo này tôi thường xuyên bị quên những thứ mà mình vừa học được, và đến khi cần lại tôi luôn mất một khoảng thời gian khá lâu với những keyword mà mình nhớ mang máng.
-
-Đó là lý do tôi tạo nên wLog series này.
-
 ## 1. Modularization:
 
 Hôm nay tôi có seminar về Modularization thì được mấy anh em đồng nghiệp chia sẻ một số bài viết hay về tư tưởng thiết kế hệ thống này.
