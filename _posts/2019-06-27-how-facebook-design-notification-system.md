@@ -102,6 +102,8 @@ Hy vọng đến đây bạn đã hình dung được những vấn đề và ki
 
 ## Thiết kế cấu trúc cơ sở dữ liệu
 
+<image src="https://raw.githubusercontent.com/Quynh-Nguyen/quynh-nguyen.github.io/master/post-images/how-facebook-design-notification-system/Notification_DB.png" width=500 />
+
 ## Thiết kế cấu trúc cơ sở dữ liệu để lưu chi tiết từng notification
 
 Đến đây chúng ta cần móc nối các bảng với nhau, đồng thời cần có một bảng để có thể lưu trữ việc móc nối giữa các Actor, Receiver và các Entity, Entity Type.
