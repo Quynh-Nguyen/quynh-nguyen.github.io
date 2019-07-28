@@ -7,6 +7,8 @@ image: assets/images/posts/wlog.png
 comments: true
 ---
 
+<image src="https://raw.githubusercontent.com/Quynh-Nguyen/quynh-nguyen.github.io/master/post-images/how-facebook-design-notification-system/elements.png" width=500 />
+
 Bạn có bao giờ tự hỏi các Notification trên Facebook, Medium, Instagram, ... được thiết kế như thế nào chưa?
 Liệu đây có phải là một việc hoàn toàn đơn giản giữa người gửi và người nhận?
 Hay chỉ cần quan tâm đến vấn đề Realtime?
@@ -43,6 +45,8 @@ Tương tự như Facebook hay Medium chúng ta sẽ có rất nhiều loại th
 
 ## 2. Một thông báo cần có những dữ liệu gì?
 
+<image src="https://raw.githubusercontent.com/Quynh-Nguyen/quynh-nguyen.github.io/master/post-images/how-facebook-design-notification-system/Example-01.png" width=500 />
+
 Với một notification bạn sẽ có 4 thành phần chính:
 
 - Actor
@@ -52,19 +56,27 @@ Với một notification bạn sẽ có 4 thành phần chính:
 
 ### Actor
 
+<image src="https://raw.githubusercontent.com/Quynh-Nguyen/quynh-nguyen.github.io/master/post-images/how-facebook-design-notification-system/Actor.png" width=500 />
+
 Actor là người kích hoạt một thông báo, bằng cách lưu định danh của user này dưới dạng `user_id` sau này chúng ta cũng có thể query để lấy Activities của một user.
 
-Ví dụ nhé, nếu A gửi lời mời kết bạn cho B, thì với thằng B nó sẽ nhận được một thông báo, nhưng với thằng A mình sẽ đưa nó vào danh sách hoạt động (Activities).
+Ví dụ nhé, nếu Alpha gửi lời mời kết bạn cho Beta, thì với thằng Beta sẽ nhận được một thông báo, nhưng với thằng Alpha mình sẽ đưa nó vào danh sách hoạt động (Activities).
 
 ### Receiver
+
+<image src="https://raw.githubusercontent.com/Quynh-Nguyen/quynh-nguyen.github.io/master/post-images/how-facebook-design-notification-system/Receiver.png" width=500 />
 
 Receiver là người nhận thông báo, một thông báo có thể gửi đến một hoặc nhiều người, vì vậy chúng ta sẽ xem xét lưu mảng `user_ids`, thế nhưng làm sao để xác định 1 người nhận trong mảng trên đã đọc thông báo nhỉ? Chúng ta sẽ xem xét tuỳ trường hợp mà lưu mảng `user_ids` hay lưu nhiều record nhé.
 
 ### Entity
 
+<image src="https://raw.githubusercontent.com/Quynh-Nguyen/quynh-nguyen.github.io/master/post-images/how-facebook-design-notification-system/Entity.png" width=500 />
+
 Entity tức là loại thông báo, nó giúp chúng ta phân biệt được đó là thông báo gì: về nhóm, một bài post, về một comment, hay một lời mời kết bạn chẳng hạn.
 
 ### Entity type
+
+<image src="https://raw.githubusercontent.com/Quynh-Nguyen/quynh-nguyen.github.io/master/post-images/how-facebook-design-notification-system/Entity%20Type.png" width=500 />
 
 Entity types là kiểu của một loại thông báo, nói văn hoa thì hơi khó hình dung, nên hãy đến với vài ví dụ cụ thể nhé:
 
