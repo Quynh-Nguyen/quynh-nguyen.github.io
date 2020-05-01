@@ -7,12 +7,14 @@ License: https://www.wowthemes.net/freebies-license/
 .mainheading {
   padding: 1rem 0rem;
 }
-a {
-  color: #14578d;
+a,
+a.text-dark {
+  color: #0a2b46;
   transition: all 0.2s;
 }
-a:hover {
-  color: #0a2b46;
+a:hover,
+a.text-dark:hover {
+  color: #14578d;
   text-decoration: none;
 }
 pre {
