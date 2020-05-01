@@ -9,12 +9,12 @@ License: https://www.wowthemes.net/freebies-license/
 }
 a,
 a.text-dark {
-  color: #0a2b46;
+  color: #0a2b46 !important;
   transition: all 0.2s;
 }
 a:hover,
 a.text-dark:hover {
-  color: #14578d;
+  color: #e02020 !important;
   text-decoration: none;
 }
 pre {
