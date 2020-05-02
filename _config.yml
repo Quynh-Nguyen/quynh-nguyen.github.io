@@ -3,7 +3,7 @@ name: "whyn4"
 description: ""
 meta_description: "whyn4 - Quynh Nguyen's Blog"
 logo: 'assets/images/logo.png'
-favicon: 'assets/images/favicon.ico'
+favicon: 'assets/images/favicon.png'
 baseurl: /
 google_analytics: 'UA-131933074-1'
 disqus: 'quynh-nguyen-github-io'
