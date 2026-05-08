@@ -17,6 +17,13 @@ a.text-dark:hover {
   color: #e02020 !important;
   text-decoration: none;
 }
+.article-post a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.article-post a:hover {
+  text-decoration: none;
+}
 pre {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
