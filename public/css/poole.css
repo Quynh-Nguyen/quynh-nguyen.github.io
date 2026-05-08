@@ -335,6 +335,15 @@ tbody tr:nth-child(odd) th {
   margin-bottom: 4em;
 }
 
+.page a,
+.post a {
+  text-decoration: underline;
+}
+.page a:hover,
+.post a:hover {
+  text-decoration: none;
+}
+
 /* Blog post or page title */
 .page-title,
 .post-title,
