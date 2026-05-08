@@ -20,8 +20,10 @@ Progress as of Sep 24, 2023.
 9. ✗ See auroras
 10. ✓ Sleep outside under the sky with my whole family
 11. ✗ Build a farm with YNa
-12. ✗ Build DF building for the company
+12. ✓ Build [DF building](https://maps.app.goo.gl/gnuVJvdGVXApyT7n7) for the company
 13. ✗ Read 1000 books
 14. ✗ Start a research lab
-15. ✗ Visit 100 countries with YNa & Alpha
-16. ✗ Watch a football match game at Old Trafford
+15. ~ Visit 100 countries (3/100) with YNa & Alpha
+16. ✗ Watch a football match at Old Trafford
+17. ✓ Start an [open source project](https://spacedf.com/)
+18. ✓ Build a [studio](https://studio.df.technology/) to start the product design
