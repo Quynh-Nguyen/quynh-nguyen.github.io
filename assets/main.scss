@@ -8,6 +8,20 @@
 	display:inline;
 }
 
+/* Make links in article content easier to recognize */
+.article-post a {
+	color: #1565c0;
+	text-decoration: none;
+	border-bottom: 1.5px solid rgba(21, 101, 192, 0.4);
+	transition: border-color 0.2s, color 0.2s;
+}
+
+.article-post a:hover {
+	color: #0d47a1;
+	border-bottom-color: #0d47a1;
+	text-decoration: none;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 	"syntax"
